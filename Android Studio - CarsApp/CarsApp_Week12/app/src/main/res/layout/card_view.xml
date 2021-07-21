@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    app:cardBackgroundColor="@color/purple_200"
+    app:cardCornerRadius="12dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/carIDHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:text="Car ID "
+            android:textSize="18sp"
+            app:layout_constraintBaseline_toBaselineOf="@+id/carIDDetails"
+            app:layout_constraintEnd_toStartOf="@+id/carIDDetails"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent" />
+        <TextView
+            android:id="@+id/carIDDetails"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:hint="Car ID"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/carIDHeader"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/makerHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:text="@string/maker_txt"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toStartOf="@+id/makerDetails"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/carIDHeader" />
+        <TextView
+            android:id="@+id/makerDetails"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:hint="@string/CardMaker"
+            android:textSize="18sp"
+            app:layout_constraintBaseline_toBaselineOf="@+id/makerHeader"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/makerHeader" />
+
+
+        <TextView
+            android:id="@+id/modelHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:text="@string/model_txt"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toStartOf="@+id/modelDetails"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/makerHeader" />
+        <TextView
+            android:id="@+id/modelDetails"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:hint="@string/CardModel"
+            android:textSize="18sp"
+            app:layout_constraintBaseline_toBaselineOf="@+id/modelHeader"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/modelHeader" />
+
+        <TextView
+            android:id="@+id/yearHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:text="@string/year_txt"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toStartOf="@+id/yearDetails"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/modelHeader" />
+        <TextView
+            android:id="@+id/yearDetails"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:hint="@string/CardYear"
+            android:textSize="18sp"
+            app:layout_constraintBaseline_toBaselineOf="@+id/yearHeader"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/yearHeader" />
+
+        <TextView
+            android:id="@+id/colorHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:text="@string/color_txt"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toStartOf="@+id/colorDetails"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/yearHeader" />
+        <TextView
+            android:id="@+id/colorDetails"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:hint="@string/CardColor"
+            android:textSize="18sp"
+            app:layout_constraintBaseline_toBaselineOf="@+id/colorHeader"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/colorHeader" />
+
+        <TextView
+            android:id="@+id/seatsHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:text="@string/seats_txt"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toStartOf="@+id/seatsDetails"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/colorHeader" />
+        <TextView
+            android:id="@+id/seatsDetails"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:hint="@string/CardSeats"
+            android:textSize="18sp"
+            app:layout_constraintBaseline_toBaselineOf="@+id/seatsHeader"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/seatsHeader" />
+
+        <TextView
+            android:id="@+id/priceHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:text="@string/price_txt"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toStartOf="@+id/priceDetails"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/seatsHeader" />
+        <TextView
+            android:id="@+id/priceDetails"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:hint="@string/CardPrice"
+            android:textSize="18sp"
+            app:layout_constraintBaseline_toBaselineOf="@+id/priceHeader"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/priceHeader" />
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

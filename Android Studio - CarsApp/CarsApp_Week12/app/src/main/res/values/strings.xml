@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">CarsApp_Week12</string>
+    <string name="maker_txt">Maker</string>
+    <string name="model_txt">Model</string>
+    <string name="year_txt">Year</string>
+    <string name="color_txt">Color</string>
+    <string name="seats_txt">Seats</string>
+    <string name="price_txt">Price</string>
+    <string name="action_clearAll">Clear Fields</string>
+    <string name="navigation_drawer_open">open navigation</string>
+    <string name="navigation_drawer_close">close navigation</string>
+    <string name="CardPrice">Price does not provided</string>
+    <string name="CardSeats">Seats does not provided</string>
+    <string name="CardColor">Color does not provided</string>
+    <string name="CardMaker">Maker does not provided</string>
+    <string name="CardModel">Model does not provided</string>
+    <string name="CardYear">Year does not provided</string>
+
+</resources>

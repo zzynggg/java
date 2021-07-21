@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity3">
+    <TextView
+        android:id="@+id/filter_maker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/maker_txt"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/filter_maker_input"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/filter_maker_input"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="case sensitive"
+        android:inputType="textPersonName"
+        app:layout_constraintBaseline_toBaselineOf="@+id/filter_maker"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/filter_maker" />
+
+    <TextView
+        android:id="@+id/filter_year"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        android:text="Year"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/filter_year_input"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/filter_maker" />
+
+    <EditText
+        android:id="@+id/filter_year_input"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="less than"
+        android:inputType="textPersonName"
+        app:layout_constraintBaseline_toBaselineOf="@+id/filter_year"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/filter_year" />
+
+    <TextView
+        android:id="@+id/filter_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        android:text="Price"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/filter_price_input"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/filter_year" />
+
+    <EditText
+        android:id="@+id/filter_price_input"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="less than"
+        android:inputType="textPersonName"
+        app:layout_constraintBaseline_toBaselineOf="@+id/filter_price"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/filter_price" />
+
+    <Button
+        android:id="@+id/btn_filter"
+        android:layout_width="0dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="32dp"
+        android:onClick="filterBtn"
+        android:text="Filter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/filter_price_input" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/filterRecyclerView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_filter">
+
+    </androidx.recyclerview.widget.RecyclerView>
+</androidx.constraintlayout.widget.ConstraintLayout>
